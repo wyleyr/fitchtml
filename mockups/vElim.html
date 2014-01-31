@@ -13,12 +13,16 @@
     div.proof-lower {}
     
     ol.proof-lines {list-style-type: none; padding-left: 1em;}
+    .proof-upper li:first-child > .proof-line {margin-bottom: 0.5em;}
+    .proof-lower li:first-child > .proof-line {margin-top: 0.5em;}
+
     p.proof-line {padding: 0; line-height: 1em;}
-    span.line-number {position: absolute; left: 0.5em; width: 2em;
-      font-family: Helvetica, sans-serif; text-align: right;}
+    span.line-number {font-size: 0.8em; font-weight: bold; position: absolute; left: 0.5em; width: 2em;
+      font-family: Helvetica, sans-serif; text-align: right; vertical-align: middle;}
     span.formula {font-family: Times, serif; font-weight: normal;} 
-    span.justification {font-size: 0.8em; font-family: Helvetica, sans-serif; font-weight: bold; float: right;}
+    span.justification {font-size: 0.8em; font-family: Helvetica, sans-serif; font-weight: bold; position: absolute; right: 6em;}
     
+  
   </style>
   <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
