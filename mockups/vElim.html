@@ -1,0 +1,126 @@
+<!html>
+<html>
+  <head>
+  <title>
+    My Awesome Proof
+  </title>
+  <style>
+    #container {width: 30%;}
+
+    div.proof {border-left: 2px solid black; width: 100%;}
+    div.proof-upper {}
+    div.proof-separator {width: 2em; border-bottom: 2px solid black}
+    div.proof-lower {}
+    
+    ol.proof-lines {list-style-type: none; padding-left: 1em;}
+    p.proof-line {padding: 0;}
+    span.formula {font-family: Times, serif; font-weight: normal;} 
+    span.justification {font-size: 0.8em; font-family: Helvetica, sans-serif; font-weight: bold; float: right;}
+    
+  </style>
+  <script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="proof">
+	<div class="proof-upper">
+	  <ol class="proof-lines">
+	    <li>
+	      <p class="proof-line">
+		<span class="formula">\(A \lor C\)</span>
+		<span class="justification">Premise</span>
+	      </p>
+	    </li>
+	    <li>
+	      <p class="proof-line">
+		<span class="formula">\(A \to D\)</span>
+		<span class="justification">Premise</span>
+	      </p>
+	    </li>
+	    <li>
+	      <p class="proof-line">
+		<span class="formula">\(C \to B\)</span>
+		<span class="justification">Premise</span>
+	      </p>
+	    </li>
+	  </ol>
+	</div>
+	<div class="proof-separator"></div>
+	<div class="proof-lower">
+	  <ol class="proof-lines">
+	    <li>
+	      <div class="proof">
+		<div class="proof-upper">
+		  <ol class="proof-lines">
+		    <li>
+		      <p class="proof-line">
+			<span class="formula">\(A\)</span>
+			<span class="justification">Assumption</span>
+		      </p>
+		    </li>
+		  </ol>
+		</div>
+		<div class="proof-separator"></div>
+		<div class="proof-lower">
+		  <ol class="proof-lines">
+		    <li>
+		      <p class="proof-line">
+			<span class="formula">\(D\)</span>
+			<span class="justification">\(\to\) Elim</span>
+		      </p>
+		    </li>
+		    <li>
+		      <p class="proof-line">
+			<span class="formula">\(D \lor B\)</span>
+			<span class="justification">\(\lor\) Intro</span>
+		      </p>
+		    </li>
+		  </ol>
+		</div>
+	      </div>
+	    </li>
+	    <li>
+	      <div class="proof">
+		<div class="proof-upper">
+		  <ol class="proof-lines">
+		    <li>
+		      <p class="proof-line">
+			<span class="formula">\(C\)</span>
+			<span class="justification">Assumption</span>
+		      </p>
+		    </li>
+		  </ol>
+		</div>
+		<div class="proof-separator"></div>
+		<div class="proof-lower">
+		  <ol class="proof-lines">
+		    <li>
+		      <p class="proof-line">
+			<span class="formula">\(B\)</span>
+			<span class="justification">\(\to\) Elim</span>
+		      </p>
+		    </li>
+		    <li>
+		      <p class="proof-line">
+			<span class="formula">\(D \lor B\)</span>
+			<span class="justification">\(\lor\) Intro</span>
+		      </p>
+		    </li>
+		  </ol>
+		</div>
+	      </div>
+	    </li>
+	    <li>
+	      <p class="proof-line">
+		<span class="formula">\(D \lor B\)</span>
+		<span class="justification">\(\lor\) Elim</span>
+	      </p>
+	    </li>
+	  </ol>
+	</div>
+      </div>
+    </div>
+  </body>
+</html> 
